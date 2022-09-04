@@ -9,7 +9,7 @@ We run standard Stardew Valley multiplayer with some changes. The actions of the
 
 Next, we took this automation a step further by adding APIs into the game to automatically create and load games based on configuration entered into our website. To make this setup a neat package, we put everything into a Docker container with a virtual screen and audio device. By default this is compute intensive, so we optimize the game for a server environment. These optimizations allow us to greatly increase the number of concurrent players the game can support without lag.
 
-The game is tweaked minimally for seemless server gameplay all without the need to install any mods, making it easy for friends to join. This includes mechanics such as [crop saver](crop-saver), [cabin managment](cabin-management), and server commands. These solve the new issues that come with having an always on server.
+The game is tweaked minimally for seamless server game play all without the need to install any mods, making it easy for friends to join. This includes mechanics such as [crop saver](crop-saver), [cabin management](cabin-management), and server commands. These solve the new issues that come with having an always on server.
 
 - [Crop Saver](crop-saver) addresses issues with players getting off mid season.
 
