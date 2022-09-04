@@ -9,7 +9,7 @@ const config = {
   title: "junimohost docs",
   tagline: "Documentation for dedicated Stardew Valley servers",
   url: "https://junimohost.com",
-  baseUrl: "/",
+  baseUrl: "/docs/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
@@ -37,7 +37,7 @@ const config = {
           anonymizeIP: true,
         },
         docs: {
-          routeBasePath: "/docs",
+          routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
