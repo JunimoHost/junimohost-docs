@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "junimohost docs",
   tagline: "Documentation for dedicated Stardew Valley servers",
-  url: "https://junimohost.com",
+  url: "https://junimohost-docs.netlify.app",
   baseUrl: "/docs/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
