@@ -2,11 +2,15 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
+// netlify deploy preview
+const isDeployPreview = process.env.CONTEXT === "deploy-preview";
+const baseUrl = isDeployPreview ? "/" : "/docs/";
+
 const config: Config = {
   title: "junimohost docs",
   tagline: "Documentation for dedicated Stardew Valley servers",
   url: "https://junimohost-docs.netlify.app",
-  baseUrl: "/docs/",
+  baseUrl: baseUrl,
   favicon: "img/favicon.ico",
 
   // GitHub pages deployment config.
@@ -34,6 +38,7 @@ const config: Config = {
           anonymizeIP: true,
         },
         docs: {
+          routeBasePath: "/",
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -62,7 +67,7 @@ const config: Config = {
       logo: {
         alt: "junimohost Logo",
         src: "img/logo.svg",
-        href: "/docs/how-does-a-stardew-server-work",
+        href: `${baseUrl}how-does-a-stardew-server-work`,
         target: "_self",
       },
       items: [
@@ -111,11 +116,11 @@ const config: Config = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/JunimoHost/junimohost-docsite",
+              href: "https://github.com/JunimoHost/junimohost-docs",
             },
             {
               label: "Contact Us",
-              href: "/docs/contact-us",
+              href: `${baseUrl}contact-us`,
             },
           ],
         },
